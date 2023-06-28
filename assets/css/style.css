@@ -341,15 +341,6 @@ p {
     h5 {
         font-size: 1.0625rem;
     }
-
-    /* blog */
-    .blog_wrapper .blog_details {
-        position: absolute;
-        top: 0.3125rem;
-        left: 0.3125rem;
-        right: 0.3125rem;
-        bottom: 0.3125rem;
-    }
 }
 
 @media (max-width:991px) {
