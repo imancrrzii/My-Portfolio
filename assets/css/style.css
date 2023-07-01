@@ -66,7 +66,10 @@ section {
     border: double 0.125rem transparent;
     padding: 0 2.0625rem;
     transition: all .3s ease-in-out;
-    --webkit-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
 }
 
 .primary-btn {
@@ -201,22 +204,61 @@ p {
     justify-content: center;
     cursor: pointer;
     border: 0.1rem solid var(--bg-gray);
-    box-shadow: none;
+    box-shadow: 0 0.625rem 0.875rem rgb(118 85 225 / 15%);
     -webkit-transition: all .4s ease 0s;
     -moz-transition: all .4s ease 0s;
     -o-transition: all .4s ease 0s;
     transition: all .4s ease 0s;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    position: relative;
+
 }
 
 .skills_wrapper .single-logo-item:hover {
     border: 0.0625rem solid transparent;
     box-shadow: 0 0.5rem 1.875rem rgb(118 85 225 / 15%);
+    background-color: var(--bg-gray);
+  }
+
+  .skill-image {
+    transition: opacity 0.3s, filter 0.3s;
+  }
+
+  .single-logo-item:hover .skill-image {
+    opacity: 0;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
 }
+
+  .single-logo-item .logo-description {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: var(--gradient);
+    color: var(--text-white);
+    padding: 14px 22px;
+    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -ms-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.625rem 1.875rem rgb(118 85 225 / 50%);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;``
+}
+
+  .single-logo-item:hover .logo-description {
+    opacity: 1;
+  }
 
 .about-next_wrapper .card {
     background-color: var(--bg-light);
@@ -225,6 +267,12 @@ p {
     -moz-transition: all .4s ease 0s;
     -o-transition: all .4s ease 0s;
     transition: all .4s ease 0s;
+    box-shadow: 0 0.625rem 0.875rem rgb(118 85 225 / 30%);
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
 }
 
 .about-next_wrapper .card:hover {
