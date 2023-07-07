@@ -7,21 +7,26 @@
 }
 
 :root {
-    --primary-color: #4458dc;
-    --secondary-color: #854fee;
+    --primary-color: #DE55E8;
+    --secondary-color: #A57EF2;
     --bg-white: #fff;
     --bg-light: #faf8ff;
     --bg-black: #000;
     --bg-gray: #eee;
-    --gradient: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+    --gradient: linear-gradient(to right, #DE55E8 0%, #A57EF2 100%), radial-gradient(circle at top left, #DE55E8, #A57EF2);
 
-    --primary-text: #4458dc;
-    --secondary-text: #854fee;
+    --primary-text: #DE55E8;
+    --secondary-text: #A57EF2;
     --text-white: #fff;
     --text-black: #000;
     --text-gray: #777;
 
     --primary-font: 'Poppins', sans-serif;
+}
+
+::selection{
+    background-color: var(--secondary-color);
+    color: var(--bg-white);
 }
 
 body {
